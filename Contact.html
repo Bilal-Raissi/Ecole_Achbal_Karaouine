@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achbal Karaouine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-beta2-web/css/all.css">
+</head>
+<body>
+    <!-- HEADER -->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo-achbal.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">À PROPOS</a></li>
+                    <li><a href="Course.html">EQUIPEMENT</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Contacter Nous</h1>
+    </section>
+
+    <!-- CONTACT US -->
+
+    <section class="location">
+        <!-- google maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.9506310223846!2d-6.754241627077629!3d34.019478164801605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76bc1a7a5eb31%3A0x441b33ad7397b53c!2z2YbZiNixINin2YTZgtix2YjZitmG!5e0!3m2!1sfr!2sma!4v1634395618835!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>Lotissement Réda Hsaine-Salé</h5>
+                        <p>Ecole Achbal Karaouine</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>05.37.83.65.98</h5>
+                        <p>Lundi à Vendredi</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <h5>ecolesena20@gmail.com</h5>
+                        <p>Email nous</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="POST">
+                    <input type="text" name="name" placeholder="Entrer votre nom" required>
+                    <input type="email" name="email" placeholder="Entrer votre email" required>
+                    <input type="text" name="subject" placeholder="Entrer votre sujet" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+
+    <section class="footer">
+        <h4>Ecole Achbal Karaouine 2021-2022</h4>
+        <div class="icons">
+            <a href="https://www.facebook.com/ecolesnouralkaraouine/"><i class="fab fa-facebook"></i></a>    
+            <a href="https://www.youtube.com/channel/UCO0PXOkZU64mjNF8W9bSmDw/videos"><i class="fab fa-youtube"></i></a>        
+        </div>
+        <p>Made with <i class="far fa-heart"></i> by BILAL RAISSI</p>
+        <p><i class="far fa-envelope"></i> bilal.raissi12@gmail.com <i class="far fa-envelope"></i></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
